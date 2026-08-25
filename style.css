@@ -285,3 +285,96 @@ footer {
     }
 
 }
+
+/* =========================
+   CHARACTERS
+========================= */
+
+.character-card {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+
+    margin: 50px 0;
+    padding: 25px 0;
+
+    text-align: left;
+}
+
+
+/* CHARACTER IMAGE */
+
+.character-image {
+    width: 220px;
+    height: auto;
+
+    display: block;
+
+    flex-shrink: 0;
+
+    border: 1px solid #333;
+}
+
+
+/* CHARACTER INFORMATION */
+
+.character-info {
+    flex: 1;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+.character-info h2 {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    font-size: 20px;
+
+    letter-spacing: 4px;
+
+    font-weight: normal;
+}
+
+.character-info p {
+    margin: 0;
+}
+
+
+/* REVERSED CHARACTER */
+
+.character-card.reverse {
+    flex-direction: row-reverse;
+}
+
+
+/* =========================
+   CHARACTERS - MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .character-card,
+    .character-card.reverse {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 20px;
+    }
+
+    .character-image {
+        width: 70%;
+
+        max-width: 220px;
+    }
+
+    .character-info {
+        font-size: 15px;
+    }
+
+}
