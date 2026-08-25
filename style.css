@@ -1,19 +1,287 @@
-body {
-    background: #050505;
-    color: #ddd;
+/* =========================
+   GENERAL
+========================= */
+
+* {
+    box-sizing: border-box;
 }
 
-header {
-    width: 90%;
-    margin: auto;
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #080808;
+    color: #d8d8d8;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    text-align: center;
 }
-.layout {
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    padding: 40px 20px 20px;
 }
+
+.header img {
+    display: block;
+
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navigation {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 45px;
+
+    padding: 20px 10px;
+
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+
+    margin-bottom: 50px;
+}
+
+.navigation a {
+    color: #bdbdbd;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    letter-spacing: 3px;
+
+    transition: 0.2s;
+}
+
+.navigation a:hover {
+    color: white;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+.layout {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 0 20px;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
 
 .content {
     width: 100%;
     max-width: 850px;
+
     margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================
+   TITLES
+========================= */
+
+.content h1 {
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    font-size: 38px;
+
+    letter-spacing: 8px;
+
+    font-weight: normal;
+}
+
+.content h2 {
+    margin-top: 35px;
+    margin-bottom: 20px;
+
+    font-size: 20px;
+
+    letter-spacing: 4px;
+
+    font-weight: normal;
+}
+
+
+/* =========================
+   DECORATION
+========================= */
+
+.decoration {
+    margin: 20px 0 40px;
+
+    color: #777;
+
+    letter-spacing: 3px;
+}
+
+
+/* =========================
+   INTRODUCTION
+========================= */
+
+.intro-text {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    text-align: left;
+
+    line-height: 1.8;
+
+    font-size: 16px;
+}
+
+.intro-text p {
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   SEPARATOR
+========================= */
+
+hr {
+    width: 80%;
+
+    margin: 50px auto;
+
+    border: 0;
+
+    border-top: 1px solid #333;
+}
+
+
+/* =========================
+   VIDEO
+========================= */
+
+.video-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    margin: 30px auto;
+}
+
+.video-container video {
+    width: 100%;
+    max-width: 800px;
+
+    display: block;
+
+    border: 1px solid #333;
+
+    background-color: black;
+}
+
+
+.video-description {
+    max-width: 700px;
+
+    margin: 20px auto;
+
+    color: #777;
+
+    font-size: 13px;
+
+    font-style: italic;
+}
+
+
+/* =========================
+   COMMENTS
+========================= */
+
+.comments {
+    max-width: 700px;
+
+    margin: 0 auto 60px;
+}
+
+.comments p {
+    color: #999;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    width: 100%;
+
+    padding: 30px 20px;
+
+    margin-top: 50px;
+
+    border-top: 1px solid #333;
+
+    color: #666;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .navigation {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .navigation a {
+        font-size: 12px;
+        letter-spacing: 2px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+        letter-spacing: 5px;
+    }
+
+    .intro-text {
+        font-size: 15px;
+    }
+
 }
